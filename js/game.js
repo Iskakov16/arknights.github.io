@@ -574,7 +574,7 @@ gameBoard.addEventListener('click', (event) => {
         delete cell.dataset.mineralType
         return
     }
-    let mineralType = null ``
+    let mineralType = null
 
     if (selectedBuilding === 'factory1') {
         if (!event.target.classList.contains('mineralCopper')) {
