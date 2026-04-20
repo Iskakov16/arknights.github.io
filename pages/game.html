@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arknights: Game</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/game.css">
+</head>
+
+<body>
+    <header class="headerHidden">
+        <div class="logo">
+            <img src="../images/logo.png" alt="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html"><img src="../images/mainIcon.png" alt="mainIcon">
+                        <p>Главная</p>
+                    </a></li>
+                <li><a href="../pages/game.html"><img src="../images/gameIcon.png" alt="gameIcon">
+                        <p>Игра</p>
+                    </a></li>
+                <li><a href="../pages/about.html"><img src="../images/aboutIcon.png" alt="aboutIcon">
+                        <p>О проекте</p>
+                    </a></li>
+                <li><a href="../pages/contacts.html"><img src="../images/feedbackIcon.png" alt="feedbackIcon">
+                        <p>Обратная
+                            связь</p>
+                    </a></li>
+
+            </ul>
+        </nav>
+        <div class="socials">
+            <img src="../images/socialsIcon.png" alt="socialsIcon" class="socialsIcon">
+            <a href="https://vk.com/akendfieldru"><img src="../images/vkIcon.png" alt="vkIcon"></a>
+            <a href="https://t.me/AKEndfieldRU#"><img src="../images/telegramIcon.png" alt="telegramIcon"></a>
+            <a href="https://discord.com/invite/akendfield"><img src="../images/discordIcon.png" alt="discordIcon"></a>
+        </div>
+    </header>
+    <section>
+        <div class="sectionWithName"><img src="../images/logoLarge.png" alt="logoLarge"></div>
+    </section>
+    <!--Блок с игрой-->
+    <section id="game">
+        <!--Магазин-->
+        <div id="shopPanel">
+            <h3>Магазин</h3>
+            <div id="shopItems">
+                <div class="shopItem" data-type="factory1" data-price="10">
+                    <div class="shopItemIcon factory1"></div>
+                    <p>Завод 1-го ур.</p>
+                    <p class="price">10 очков</p>
+                </div>
+                <div class="shopItem" data-type="factory2" data-price="20">
+                    <div class="shopItemIcon factory2"></div>
+                    <p>Завод 2-го ур.</p>
+                    <p class="price">20 очков</p>
+                </div>
+                <div class="shopItem" data-type="base" data-price="100">
+                    <div class="shopItemIcon base"></div>
+                    <p>База</p>
+                    <p class="price">100 очков</p>
+                </div>
+                <div class="shopItem" data-type="upgrader" data-price="50">
+                    <div class="shopItemIcon upgrader"></div>
+                    <p>Улучшатель</p>
+                    <p class="price">50 очков</p>
+                </div>
+                <div class="shopItem" data-type="merger" data-price="50">
+                    <div class="shopItemIcon merger"></div>
+                    <p>Объединитель</p>
+                    <p class="price">50 очков</p>
+                </div>
+                <div class="shopItem" data-type="conveyors" data-price="1">
+                    <div class="shopItemIcon conveyors"></div>
+                    <p>Конвейер</p>
+                    <p class="price">1 очков</p>
+                </div>
+            </div>
+        </div>
+        <!-- Игровое поле -->
+        <div id="gameBoard">
+        </div>
+        <!-- Инвентарь -->
+        <div id="inventoryPanel">
+            <div id="inventoryPanelTop">
+                <h3>Инвентарь</h3>
+                <div id="inventoryItems">
+                </div>
+            </div>
+            <div id="inventoryPanelBtns">
+                <button id="rotateBtn" class="inventoryPanelBtn">Поворот: вправо</button>
+                <button id="deleteBtn" class="inventoryPanelBtn">Удалить здание</button>
+                <p class="points">Очки: 0</p>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+
+
+    <footer class="siteFooter">
+        <!--О компании в подвале-->
+        <div class="footerCompany">
+            <h3>Hypergryph</h3>
+            <p>
+                Мы стремимся предложить игрокам гармоничный и интересный игровой процесс, который будет радовать
+                на
+                каждом шаге
+            </p>
+            <div class="footerCompanySocials">
+                <a href="https://vk.com/akendfieldru"><img src="../images/vkIcon.png" alt="vkIcon"></a>
+                <a href="https://t.me/AKEndfieldRU#"><img src="../images/telegramIcon.png" alt="telegramIcon"></a>
+                <a href="https://discord.com/invite/akendfield"><img src="../images/discordIcon.png"
+                        alt="discordIcon"></a>
+            </div>
+        </div>
+        <!--Контакты в подвале-->
+        <div class="footerContacts">
+            <h3>Контакты</h3>
+            <p>Email: support@gryphline.com</p>
+            <p>X(Twitter): @HypergryphArtOS</p>
+            <p>
+                Адрес офиса: Здание Changhui Mansion, ул. Иньсян, 799, посёлок Наньсян, район Цзядин, г. Шанхай, Китай
+            </p>
+        </div>
+        <!--Навигация в подвале-->
+        <div class="footerNav">
+            <h3>Разделы</h3>
+            <a href="../index.html">
+                <p>Главная</p>
+            </a>
+            <a href="./game.html">
+                <p>Игра</p>
+            </a>
+            <a href="./about.html">
+                <p>О проекте</p>
+            </a>
+            <a href="./contacts.html">
+                <p>Обратная связь</p>
+            </a>
+        </div>
+        <!--Копирайт подвала-->
+        <div class="footerBrand">
+            <p>© Hypergryph - Arknights: Endfield</p>
+        </div>
+    </footer>
+
+    <script type="module" src="../js/game.js"></script>
+    <script src="../js/header.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arknights: Endfiled</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header class="headerHidden">
+        <div class="logo">
+            <img src="./images/logo.png" alt="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html"><img src="./images/mainIcon.png" alt="mainIcon">
+                        <p>Главная</p>
+                    </a></li>
+                <li><a href="./pages/game.html"><img src="./images/gameIcon.png" alt="gameIcon">
+                        <p>Игра</p>
+                    </a></li>
+                <li><a href="./pages/about.html"><img src="./images/aboutIcon.png" alt="aboutIcon">
+                        <p>О проекте</p>
+                    </a></li>
+                <li><a href="./pages/contacts.html"><img src="./images/feedbackIcon.png" alt="feedbackIcon">
+                        <p>Обратная
+                            связь</p>
+                    </a></li>
+
+            </ul>
+        </nav>
+        <div class="socials">
+            <img src="./images/socialsIcon.png" alt="socialsIcon" class="socialsIcon">
+            <a href="https://vk.com/akendfieldru"><img src="./images/vkIcon.png" alt="vkIcon"></a>
+            <a href="https://t.me/AKEndfieldRU#"><img src="./images/telegramIcon.png" alt="telegramIcon"></a>
+            <a href="https://discord.com/invite/akendfield"><img src="./images/discordIcon.png" alt="discordIcon"></a>
+        </div>
+    </header>
+    <!-----Hero-блок----->
+    <section id="hero">
+        <!--Видео на весь экран-->
+        <div class="heroMedia">
+            <iframe id="heroVideo"
+                src="https://www.youtube.com/embed/QqrL09StjDE?autoplay=1&controls=0&mute=1&modestbranding=1&showinfo=0&rel=0&fs=0&iv_load_policy=3"
+                title="YouTube video player" allow="autoplay;" allowfullscreen>
+            </iframe>
+
+            <div id="heroDownload">
+                <p><img src="images/download.png" alt="download">Скачать сейчас</p>
+                <ul>
+                    <a href="https://apps.apple.com/us/app/arknights-endfield/id6752642477">
+                        <img src="images/appStore.f1c090cb.png" alt="appStore">App
+                        Store</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.gryphline.endfield.gp"><img
+                            src="images/googlePlay.png" alt="googlePlay">Google Play</a>
+                    <a href="https://store.playstation.com/en-us/concept/10009205/"><img src="images/ps5.png"
+                            alt="ps5">PS5</a>
+                    <a href="https://store.epicgames.com/ru/p/arknightsendfield-f0f167"><img src="images/epic.png"
+                            alt="epic">Epic Games</a>
+                    <a href="https://play.google.com/pc-store/games/details?id=com.gryphline.endfield.gp"><img
+                            src="images/gpg.png" alt="gpg">Google Play
+                        Games</a>
+                    <a href=""><img src="images/windows.png" alt="windows">Windows</a>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-----Блок с двигающимся текстом----->
+    <section class="textSlider">
+        <p>Arknights Endfield</p>
+        <p>Arknights Endfield</p>
+        <p>Arknights Endfield</p>
+    </section>
+    <!-----Персонажи-блок----->
+    <section id="characters">
+        <div class="slider">
+            <div class="sliderBtn">
+                <button class="sliderArrow next"><img src="images/arrow-angle-pointing-up.svg" alt="arrowUp"></button>
+                <div class="sliderBtnCharacters">
+                    <!--кнопки с персонажами, которые будут создаваться через js код-->
+                </div>
+                <button class="sliderArrow prev"><img src="images/arrow-down-angle.svg" alt="arrowDown"></button>
+            </div>
+            <div class="slides">
+                <!--слайды с персонажами, которые будут создаваться через js код-->
+            </div>
+        </div>
+    </section>
+    <!-----Разделительный блок----->
+    <section class="divider">
+        <img src="images/sectionDivider.png" alt="sectionDivider">
+        <div class="dividerText">
+            <p>ARKNIGHTS: ENDFIELD</p>
+            <p>LORE</p>
+        </div>
+    </section>
+
+    <footer class="siteFooter">
+        <!--О компании в подвале-->
+        <div class="footerCompany">
+            <h3>Hypergryph</h3>
+            <p>
+                Мы стремимся предложить игрокам гармоничный и интересный игровой процесс, который будет радовать
+                на
+                каждом шаге
+            </p>
+            <div class="footerCompanySocials">
+                <a href="https://vk.com/akendfieldru"><img src="./images/vkIcon.png" alt="vkIcon"></a>
+                <a href="https://t.me/AKEndfieldRU#"><img src="./images/telegramIcon.png" alt="telegramIcon"></a>
+                <a href="https://discord.com/invite/akendfield"><img src="./images/discordIcon.png"
+                        alt="discordIcon"></a>
+            </div>
+        </div>
+        <!--Контакты в подвале-->
+        <div class="footerContacts">
+            <h3>Контакты</h3>
+            <p>Email: support@gryphline.com</p>
+            <p>X(Twitter): @HypergryphArtOS</p>
+            <p>
+                Адрес офиса: Здание Changhui Mansion, ул. Иньсян, 799, посёлок Наньсян, район Цзядин, г. Шанхай, Китай
+            </p>
+        </div>
+        <!--Навигация в подвале-->
+        <div class="footerNav">
+            <h3>Разделы</h3>
+            <a href="./index.html">
+                <p>Главная</p>
+            </a>
+            <a href="./pages/game.html">
+                <p>Игра</p>
+            </a>
+            <a href="./pages/about.html">
+                <p>О проекте</p>
+            </a>
+            <a href="./pages/contacts.html">
+                <p>Обратная связь</p>
+            </a>
+        </div>
+        <!--Копирайт подвала-->
+        <div class="footerBrand">
+            <p>© Hypergryph - Arknights: Endfield</p>
+        </div>
+    </footer>
+
+    <script src="./js/header.js"></script>
+    <script src="./js/slider.js"></script>
+</body>
+
+</html>

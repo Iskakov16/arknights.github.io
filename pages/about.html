@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/about.css">
+</head>
+
+<body>
+    <header class="headerHidden">
+        <div class="logo">
+            <img src="../images/logo.png" alt="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html"><img src="../images/mainIcon.png" alt="mainIcon">
+                        <p>Главная</p>
+                    </a></li>
+                <li><a href="../pages/game.html"><img src="../images/gameIcon.png" alt="gameIcon">
+                        <p>Игра</p>
+                    </a></li>
+                <li><a href="../pages/about.html"><img src="../images/aboutIcon.png" alt="aboutIcon">
+                        <p>О проекте</p>
+                    </a></li>
+                <li><a href="../pages/contacts.html"><img src="../images/feedbackIcon.png" alt="feedbackIcon">
+                        <p>Обратная
+                            связь</p>
+                    </a></li>
+
+            </ul>
+        </nav>
+        <div class="socials">
+            <img src="../images/socialsIcon.png" alt="socialsIcon" class="socialsIcon">
+            <a href="https://vk.com/akendfieldru"><img src="../images/vkIcon.png" alt="vkIcon"></a>
+            <a href="https://t.me/AKEndfieldRU#"><img src="../images/telegramIcon.png" alt="telegramIcon"></a>
+            <a href="https://discord.com/invite/akendfield"><img src="../images/discordIcon.png" alt="discordIcon"></a>
+        </div>
+    </header>
+    <section>
+        <div class="sectionWithName"><img src="../images/logoLarge.png" alt="logoLarge"></div>
+    </section>
+
+
+    <section id="about">
+
+        <div id="aboutProject" class="aboutSection">
+            <h1>О проекте</h1>
+
+            <p><span>Название проекта</span>: Arknights: Endfield</p>
+            <p><span>Цель проекта</span>: рассказать об игре и продемонстрировать геймплейную механику построение
+                базы, создав минималистичную версию игры на сайте.</p>
+
+        </div>
+        <div id="aboutAuthor" class="aboutSection">
+            <h1> Автор</h1>
+
+            <div id="aboutAuthorText">
+                <div>
+                    <p><span>Имя</span>: Искаков Диас</p>
+                    <p><span>Группа</span>: 15 ТИС</p>
+                    <p><span>Курс</span>: 2 курс</p>
+                    <p><span>Email</span>: piaziskakov@gmail.com</p>
+                </div>
+                <img src="../images/creator.jpg" alt="creatorImg">
+            </div>
+        </div>
+
+        <div id="aboutInstruction" class="aboutSection">
+            <h1>Инструкция</h1>
+
+            <p>
+                В игре вам необходимо строить и развивать завод.
+                Используйте доступные ресурсы, размещайте производственные здания
+                и оптимизируйте процессы для увеличения эффективности.
+            </p>
+            <p></p>
+            <ul>
+                <li>Откройте страницу <a href="./pages/game.html">"Игра"</a>.</li>
+                <li>Медь – клетка оранжевого цвета. Используется для строительства заводов первого уровня.</li>
+                <li>Свинец – клетка серого цвет. Используется для строительства заводов второго уровня.</li>
+                <li>Очки – основная валюта. Начинаете с 0 очков. Зарабатываете, доставляя предметы на базу. Тратите
+                    на покупку зданий в магазине.</li>
+                <li>Инвентарь хранит купленные здания. Выбираете здание из инвентаря и размещаете на поле.</li>
+                <li>Игра автоматически сохраняется в браузере . При перезагрузке прогресс восстанавливается.</li>
+            </ul>
+        </div>
+        <div id="aboutBuilding" class="aboutSection">
+            <h1>Здания</h1>
+            <h2>Завод 1-го уровня</h2>
+            <img src="../images/factory1.gif" alt="Завод 1 уровня">
+            <ul>
+                <li>Размещение: Только на клетке с медью (оранжевой).</li>
+                <li>Функция: Производит медь. Предметы выходят в направлении ориентации завода.</li>
+            </ul>
+            <hr>
+            <h2>Завод 2-го уровня</h2>
+            <img src="../images/factory2.gif" alt="Завод 2 уровня">
+            <ul>
+                <li>Размещение: Только на клетке со свинцом (серой).</li>
+                <li>Функция: Производит свинец. Предметы выходят в направлении ориентации завода.</li>
+            </ul>
+            <hr>
+            <h2>Конвейер</h2>
+            <img src="../images/conveyors.gif" alt="Конвейер">
+            <ul>
+
+                <li>Размещение: На любой пустой клетке.</li>
+                <li>Функция: Направляет предметы в сторону своей ориентации. Предметы движутся по цепочке
+                    конвейеров. Если конвейер повернут, он меняет направление движения.</li>
+                <li>Пример: Если конвейер смотрит вниз, предметы, попавшие на него, будут двигаться вниз. Конвейеры
+                    соединяют заводы с базой или другими зданиями.</li>
+            </ul>
+
+            <hr>
+            <h2>Улучшатель (Upgrader)</h2>
+            <img src="../images/upgrader.webp" alt="Улучшатель">
+            <ul>
+                <li>Размещение: На любой пустой клетке.</li>
+                <li>Функция: Принимает все виды минералов (медь, свинец, графит) и улучшает их, повышая стоимость:
+                </li>
+                <ul>
+                    <li>Медь → Улучшенная медь: стоимость удваивается в 2 раза.</li>
+                    <li>Свинец → Улучшенный свинец: стоимость увеличивается на 50%.</li>
+                    <li>Графит → Улучшенный графит: стоимость увеличивается на 50% .</li>
+                </ul>
+                <li>Предметы проходят через улучшатель и продолжают движение в том же направлении. Улучшатель не
+                    меняет направление – он только модифицирует предмет.</li>
+            </ul>
+
+            <hr>
+            <h2>Объединитель (Merger)</h2>
+            <img src="../images/merger.gif" alt="Объединитель">
+            <ul>
+                <li>Размещение: На любой пустой клетке.</li>
+                <li>Функция: Собирает сырые материалы для создания нового ресурса – графита. Требует:</li>
+                <ul>
+                    <li>1 свинец + 1 медь → 1 графит.</li>
+                </ul>
+                <li>Хранит ресурсы внутри себя. Когда накопится по 1 меди и свинца, производит графит и отправляет
+                    его дальше по конвейеру в направлении ориентации объединителя.</li>
+            </ul>
+
+            <hr>
+            <h2>База (Base)</h2>
+            <img src="../images/base.webp" alt="База">
+            <ul>
+                <li>Размещение: На любой пустой клетке.</li>
+                <li>Функция: Конечная точка для предметов. Когда предмет достигает базы, он удаляется, и вы
+                    получаете очки.</li>
+            </ul>
+        </div>
+        <div id="aboutResources" class="aboutSection">
+            <h1>Ресурсы</h1>
+            <ul>
+                <li>
+                    <img src="../images/copperOre.webp" alt="Медь">
+                    <p>Медь – стоимость 1 очко.</p>
+                </li>
+                <li>
+                    <img src="../images/upgradedCopper.webp" alt="Улучшенная медь">
+                    <p>Улучшенная медь – стоимость 2 очка.</p>
+                </li>
+                <li>
+                    <img src="../images/leadOre.webp" alt="Свинец">
+                    <p>Свинец – стоимость 4 очка.</p>
+                </li>
+                <li>
+                    <img src="../images/upgradedLead.webp" alt="Улучшенный свинец">
+                    <p>Улучшенный свинец – стоимость 6 очков.</p>
+                </li>
+                <li>
+                    <img src="../images/graphite.webp" alt="Графит">
+                    <p> Графит – стоимость 10 очков.</p>
+                </li>
+                <li>
+                    <img src="../images/upgradedGraphite.webp" alt="Улучшенный графит">
+                    <p>Улучшенный графит – стоимость 15 очков.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <footer class="siteFooter">
+        <!--О компании в подвале-->
+        <div class="footerCompany">
+            <h3>Hypergryph</h3>
+            <p>
+                Мы стремимся предложить игрокам гармоничный и интересный игровой процесс, который будет радовать
+                на
+                каждом шаге
+            </p>
+            <div class="footerCompanySocials">
+                <a href="https://vk.com/akendfieldru"><img src="../images/vkIcon.png" alt="vkIcon"></a>
+                <a href="https://t.me/AKEndfieldRU#"><img src="../images/telegramIcon.png" alt="telegramIcon"></a>
+                <a href="https://discord.com/invite/akendfield"><img src="../images/discordIcon.png"
+                        alt="discordIcon"></a>
+            </div>
+        </div>
+        <!--Контакты в подвале-->
+        <div class="footerContacts">
+            <h3>Контакты</h3>
+            <p>Email: support@gryphline.com</p>
+            <p>X(Twitter): @HypergryphArtOS</p>
+            <p>
+                Адрес офиса: Здание Changhui Mansion, ул. Иньсян, 799, посёлок Наньсян, район Цзядин, г. Шанхай, Китай
+            </p>
+        </div>
+        <!--Навигация в подвале-->
+        <div class="footerNav">
+            <h3>Разделы</h3>
+            <a href="../index.html">
+                <p>Главная</p>
+            </a>
+            <a href="./game.html">
+                <p>Игра</p>
+            </a>
+            <a href="./about.html">
+                <p>О проекте</p>
+            </a>
+            <a href="./contacts.html">
+                <p>Обратная связь</p>
+            </a>
+        </div>
+        <!--Копирайт подвала-->
+        <div class="footerBrand">
+            <p>© Hypergryph - Arknights: Endfield</p>
+        </div>
+    </footer>
+
+    <script src="../js/header.js"></script>
+</body>
+
+</html>

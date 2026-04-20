@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+:root {
+    --yellow: rgb(255, 250, 0);
+    --transition: all 0.25s ease;
+    --black: rgb(28, 28, 28);
+    --border-radius: 5px;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    color: var(--black);
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section {
+    width: 100vw;
+}
+
+/*------Общий Header------*/
+.logo {
+    width: 100%;
+    height: 33vh;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.headerHidden {
+    position: fixed;
+    height: 100vh;
+    width: 4vw;
+    background-color: white;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    transition: var(--transition);
+    padding: 10px 10px;
+    box-shadow: 0 0 15px gray;
+}
+
+.headerHidden nav {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+
+}
+
+.headerHidden nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.headerHidden nav ul li {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.headerHidden li,
+.headerHidden li a {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.headerHidden nav ul li a {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.headerHidden li a img {
+    width: 2vw;
+    height: 2vw;
+    object-fit: contain;
+}
+
+.headerHidden .socialsIcon {
+    opacity: 1;
+    display: flex;
+    max-width: 2vw;
+    transition: var(--transition) 3s;
+}
+
+.headerHidden nav ul li a span {
+    display: flex;
+    max-width: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.headerHover {
+    width: 12vw;
+}
+
+.headerHover nav ul li {
+    display: flex;
+    align-items: center;
+    max-height: 15vh;
+}
+
+.headerHover nav ul li a span {
+    display: inline-block;
+    max-width: 180px;
+    opacity: 1;
+    transition: var(--transition);
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+.headerHidden .socials img {
+    max-width: 2vw;
+    object-fit: contain;
+}
+
+.socials a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.headerHover .socials {
+    gap: 0.5vw;
+}
+
+.headerHover .socialsIcon {
+    max-width: 0;
+    opacity: 0;
+    display: none;
+}
+
+.headerHover .socials a {
+    max-width: 3vw;
+    opacity: 1;
+}
+
+/*------Секция с названием игры------*/
+.sectionWithName {
+    width: 100%;
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    padding: 5vh;
+}
+
+.sectionWithName img {
+    width: 50%;
+}
+
+/*------Подвал------*/
+
+.siteFooter {
+    background: var(--black);
+    padding: 40px 0;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    padding: 5% 15%;
+    gap: 15%;
+    color: lightgray;
+}
+
+.siteFooter p {
+    font-size: 18px;
+    text-align: justify;
+    transition: var(--transition);
+    color: lightgray;
+}
+
+.siteFooter h3 {
+    font-size: 20px;
+    text-align: justify;
+    border-bottom: 1px solid var(--yellow);
+}
+
+.footerCompany {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footerCompanySocials {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.footerCompanySocials a {
+    background-color: var(--yellow);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition)
+}
+
+.footerCompanySocials a img {
+    height: 25px;
+    width: 25px;
+    object-fit: contain;
+    margin: auto;
+    transition: var(--transition)
+}
+
+.footerCompanySocials a:hover {
+    transform: translateY(-2px);
+}
+
+.footerContacts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footerNav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footerNav a {
+    transition: var(--transition);
+    width: fit-content;
+}
+
+.footerNav a:hover {
+    box-shadow: 0 2px 0 var(--yellow);
+    transform: translateY(-2px);
+}
+
+.footerBrand {
+    grid-area: 2/1/3/4;
+}
+
+.footerBrand p {
+    text-align: center;
+}
