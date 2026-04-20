@@ -652,7 +652,3 @@ function getSelectedBuilding() {
 }
 shop.updateShopUI()
 loadGame()
-
-//реализовать кнопку удаления сохранки
-localStorage.removeItem('gameData')
-
