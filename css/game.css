@@ -6,7 +6,7 @@
     flex-direction: row;
     height: 100%;
     width: 100%;
-    background-image: url(/images/aboutBackground.png);
+    background-image: url(../images/aboutBackground.png);
 }
 
 .cell {
@@ -45,65 +45,65 @@
 }
 
 .mineralLead {
-    background-image: url(/images/leadMineral.webp);
+    background-image: url(../images/leadMineral.webp);
     background-color: rgb(150, 150, 160);
 }
 
 .mineralCopper {
-    background-image: url(/images/copperMineral.webp);
+    background-image: url(../images/copperMineral.webp);
     background-color: rgb(200, 180, 150);
 }
 
 .oreCopper {
-    background-image: url(/images/copperOre.webp);
+    background-image: url(../images/copperOre.webp);
 
 }
 
 .oreLead {
-    background-image: url(/images/leadOre.webp);
+    background-image: url(../images/leadOre.webp);
 }
 
 .upgradedCopper {
-    background-image: url(/images/upgradedCopper.webp);
+    background-image: url(../images/upgradedCopper.webp);
 }
 
 .upgradedLead {
-    background-image: url(/images/upgradedLead.webp);
+    background-image: url(../images/upgradedLead.webp);
 }
 
 .graphite {
-    background-image: url(/images/graphite.webp);
+    background-image: url(../images/graphite.webp);
 }
 
 .upgradedGraphite {
-    background-image: url(/images/upgradedGraphite.webp);
+    background-image: url(../images/upgradedGraphite.webp);
 }
 
 .factory1 {
-    background-image: url(/images/factory1.gif);
+    background-image: url(../images/factory1.gif);
 
 }
 
 .factory2 {
-    background-image: url(/images/factory2.gif);
+    background-image: url(../images/factory2.gif);
 
 }
 
 .conveyors {
-    background-image: url(/images/conveyors.gif);
+    background-image: url(../images/conveyors.gif);
 
 }
 
 .base {
-    background-image: url(/images/base.webp);
+    background-image: url(../images/base.webp);
 }
 
 .upgrader {
-    background-image: url(/images/upgrader.webp);
+    background-image: url(../images/upgrader.webp);
 }
 
 .merger {
-    background-image: url(/images/merger.gif);
+    background-image: url(../images/merger.gif);
 }
 
 #shopPanel {
