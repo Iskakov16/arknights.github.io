@@ -1,0 +1,100 @@
+.contacts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    padding: 5vh 20vw;
+    background-image: url(../images/aboutBackground.png);
+}
+
+.contacts p {
+    font-size: 16px;
+}
+
+.contacts p span {
+    font-size: 20px;
+}
+
+.contact {
+    width: 400px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contactsText {
+    grid-area: 1/1/2/3;
+}
+
+.contactsLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contactsLeftContact {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    max-width: 400px;
+}
+
+.contactsLeftContactImg {
+    min-width: 50px;
+    min-height: 50px;
+    padding: 5px;
+    background-color: var(--black);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactsLeftContact img {
+    object-fit: contain;
+    filter: invert();
+    height: 30px;
+    width: 30px;
+}
+
+.contactsRight h3 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    border: 1px solid var(--black);
+    background-color: var(--black);
+    color: lightgray;
+    border-radius: 8px;
+    font-size: 16px;
+    resize: none;
+}
+
+.contact button {
+    padding: 10px;
+    border: none;
+    background: var(--yellow);
+    border-radius: 8px;
+    font-size: 16px;
+    transition: var(--transition);
+}
+
+.contact button:hover {
+    background-color: var(--black);
+    color: lightgray;
+}
+
+.contacts iframe {
+    width: 100%;
+    height: 40%;
+    height: 350px;
+    grid-area: 3/1/3/3;
+    margin: auto;
+    border: 3px solid var(--black);
+    border-radius: 3px;
+    margin-bottom: 30px;
+}
