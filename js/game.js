@@ -201,7 +201,7 @@ function selectInventoryItem(type) {
 // Сохраняет текущее состояние игры в localStorage
 function saveGame() {
     const minerals = []
-    for (let i = 0; i < gameBoard.children.length; i++) {
+    for (let i = 0; i < 625; i++) {
         const cell = gameBoard.children[i]
         minerals.push(cell.dataset.mineral || null)
     }
@@ -521,6 +521,7 @@ rotateBtn.addEventListener('click', () => {
 })
 
 //создание поля
+//создание поля
 for (let i = 0; i < 625; i++) {
     const cell = document.createElement('div')
     cell.className = 'cell'
@@ -536,6 +537,10 @@ for (let i = 0; i < 625; i++) {
         }
     }
     gameBoard.appendChild(cell)
+}
+
+if (!hasSave) {
+    saveGame()
 }
 
 const deleteBtn = document.getElementById('deleteBtn')
