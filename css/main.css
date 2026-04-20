@@ -165,7 +165,7 @@
     position: relative;
     margin: 0 auto;
     width: 100%;
-    background-image: url(/images/back.png);
+    background-image: url(../images/back.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
