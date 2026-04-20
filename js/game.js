@@ -544,6 +544,7 @@ if (!hasSave) {
 }
 
 const deleteBtn = document.getElementById('deleteBtn')
+const clearSaveBtn = document.getElementById('clearSaveBtn')
 
 deleteBtn.addEventListener('click', () => {
     selectedInventoryItem = null
@@ -553,11 +554,23 @@ deleteBtn.addEventListener('click', () => {
     })
     deleteBtn.classList.add('active')
 })
+
+clearSaveBtn.addEventListener('click', () => {
+    if (confirm('Вы уверены? Это удалит всё сохранение!')) {
+        localStorage.removeItem('gameData')
+        location.reload()
+    }
+})
 gameBoard.addEventListener('click', (event) => {
     if (!event.target.classList.contains('cell')) { return }
 
     if (selectedBuilding !== 'delete') {
         selectedBuilding = selectedInventoryItem || getSelectedBuilding()
+    }
+
+    // Проверка: если здание не выбрано, выходим из функции
+    if (!selectedBuilding) {
+        return
     }
 
     const index = Array.prototype.indexOf.call(gameBoard.children, event.target)
@@ -657,4 +670,3 @@ function getSelectedBuilding() {
 }
 shop.updateShopUI()
 loadGame()
-
